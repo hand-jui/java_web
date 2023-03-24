@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, snas-serif;
+}
+
+header {
+	background-color: #555;
+	color: white;
+	font-size: 30px;
+	padding: 30px;
+	text-align: center;
+}
+
+section {
+	display: flex;
+}
+
+nav {
+	flex: 1;
+	background-color: #FFE0B2FF;
+	padding: 20px
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+article {
+	flex: 3;
+	padding: 20px;
+	background-color: maroon;
+}
+
+footer {
+	background-color: #555;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
