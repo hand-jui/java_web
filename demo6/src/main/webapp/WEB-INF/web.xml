@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>demo6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 서블릿 전체에서 공유할 수 있는 데이터를 선언 -->
+  <context-param>
+  	<param-name>imgDir</param-name>
+  	<param-value>/upload/img1</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>testServerIp</param-name>
+  	<param-value>127.0.0.1</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>realServerIp</param-name>
+  	<param-value>88.0.13.1</param-value>  
+  </context-param>
+  <servlet>
+	<servlet-name>myServlet</servlet-name>
+	<servlet-class>com.tenco.MyServlet</servlet-class>
+	<!-- 초기 파라미터 설정하기 -->
+	<init-param>
+		<param-name>adminId</param-name>
+		<param-value>tenco</param-value>
+	</init-param>
+	<init-param>
+		<param-name>adminPw</param-name>
+		<param-value>asd123</param-value>
+	</init-param>
+  </servlet>
+	
+	<!-- URL mapping 하기 -->
+  <servlet-mapping>
+	<servlet-name>myServlet</servlet-name>
+	<url-pattern>/myServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
