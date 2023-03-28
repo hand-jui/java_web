@@ -43,7 +43,6 @@ public class CategoryDAO implements ICategoryRepo {
 				rs.close();
 				pStmt.close();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
