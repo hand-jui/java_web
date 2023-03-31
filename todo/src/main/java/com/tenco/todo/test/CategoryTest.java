@@ -47,13 +47,13 @@ public class CategoryTest extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("test/categoryList.jsp");
 			// request, response -->categoryList.jsp
 			dispatcher.forward(request, response);
-		}
 
 //		목적지 list2.jsp -> jstl 사용해서 출력
 //		request.setAttribute("list2", resultList);
 //		RequestDispatcher dispatcher2 = request.getRequestDispatcher("test/list2.jsp");
 //		dispatcher2.forward(request, response);
 
+		}
 //		System.out.println(result.toString());
 //		PrintWriter out = response.getWriter();
 //		out.println(result.toString());
